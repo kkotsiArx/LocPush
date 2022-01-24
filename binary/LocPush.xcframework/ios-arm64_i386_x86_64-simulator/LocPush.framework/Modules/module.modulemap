@@ -1,0 +1,11 @@
+framework module LocPush {
+  umbrella header "LocPush.h"
+
+  export *
+  module * { export * }
+}
+
+module LocPush.Swift {
+    header "LocPush-Swift.h"
+    requires objc
+}
