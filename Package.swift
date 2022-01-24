@@ -23,7 +23,7 @@ let package = Package(
             name: "LocPush",
             dependencies: []),
         .binaryTarget(
-            name: "LocPush",
+            name: "LocPushBinary",
             path: "binary/LocPush.xcframework"
         ),
         .testTarget(
