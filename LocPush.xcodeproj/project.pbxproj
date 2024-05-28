@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 52;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXAggregateTarget section */
@@ -21,8 +21,7 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
-		AF8F5D62279EDE54009781DC /* LocPush.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF8F5D61279EDE54009781DC /* LocPush.xcframework */; };
-		OBJ_30 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_6 /* Package.swift */; };
+		AF1D2E762C061FFC0002DB7B /* LocPush.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF1D2E752C061FFC0002DB7B /* LocPush.xcframework */; };
 		OBJ_41 /* LocPushTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_12 /* LocPushTests.swift */; };
 		OBJ_42 /* XCTestManifests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_13 /* XCTestManifests.swift */; };
 		OBJ_44 /* LocPush.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "LocPush::LocPush::Product" /* LocPush.framework */; };
@@ -46,8 +45,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AF1D2E752C061FFC0002DB7B /* LocPush.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = LocPush.xcframework; sourceTree = "<group>"; };
 		AF8F5D5B279EDD68009781DC /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AF8F5D61279EDE54009781DC /* LocPush.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = LocPush.xcframework; sourceTree = "<group>"; };
 		"LocPush::LocPush::Product" /* LocPush.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = LocPush.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		"LocPush::LocPushTests::Product" /* LocPushTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; path = LocPushTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		OBJ_12 /* LocPushTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocPushTests.swift; sourceTree = "<group>"; };
@@ -61,7 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 0;
 			files = (
-				AF8F5D62279EDE54009781DC /* LocPush.xcframework in Frameworks */,
+				AF1D2E762C061FFC0002DB7B /* LocPush.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,7 +78,7 @@
 		AF8F5D60279EDE3F009781DC /* binary */ = {
 			isa = PBXGroup;
 			children = (
-				AF8F5D61279EDE54009781DC /* LocPush.xcframework */,
+				AF1D2E752C061FFC0002DB7B /* LocPush.xcframework */,
 			);
 			path = binary;
 			sourceTree = "<group>";
@@ -111,7 +110,7 @@
 			name = Products;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		OBJ_5 /*  */ = {
+		OBJ_5 = {
 			isa = PBXGroup;
 			children = (
 				AF8F5D60279EDE3F009781DC /* binary */,
@@ -121,7 +120,6 @@
 				OBJ_14 /* Products */,
 				OBJ_17 /* README.md */,
 			);
-			name = "";
 			sourceTree = "<group>";
 		};
 		OBJ_7 /* Sources */ = {
@@ -207,7 +205,7 @@
 			knownRegions = (
 				en,
 			);
-			mainGroup = OBJ_5 /*  */;
+			mainGroup = OBJ_5;
 			productRefGroup = OBJ_14 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -232,7 +230,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
-				OBJ_30 /* Package.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,7 +269,7 @@
 				);
 				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = LocPush.xcodeproj/LocPush_Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(TOOLCHAIN_DIR)/usr/lib/swift/macosx",
@@ -309,7 +306,7 @@
 				);
 				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = LocPush.xcodeproj/LocPush_Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(TOOLCHAIN_DIR)/usr/lib/swift/macosx",
@@ -340,7 +337,7 @@
 			buildSettings = {
 				CURRENT_PROJECT_VERSION = 1.0;
 				INFOPLIST_FILE = "$(SRCROOT)/Sources/LocPush/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD = /usr/bin/true;
 				MARKETING_VERSION = 1.2.3;
 				OTHER_SWIFT_FLAGS = "-swift-version 5 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/4_2 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -package-description-version 5.3.0";
@@ -358,7 +355,7 @@
 			buildSettings = {
 				CURRENT_PROJECT_VERSION = 1.0;
 				INFOPLIST_FILE = "$(SRCROOT)/Sources/LocPush/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD = /usr/bin/true;
 				MARKETING_VERSION = 1.2.3;
 				OTHER_SWIFT_FLAGS = "-swift-version 5 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/4_2 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -package-description-version 5.3.0";
@@ -390,8 +387,8 @@
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_SWIFT_FLAGS = "$(inherited) -DXcode";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx;
-				SUPPORTED_PLATFORMS = "macosx iphoneos iphonesimulator appletvos appletvsimulator watchos watchsimulator";
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) SWIFT_PACKAGE DEBUG";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				USE_HEADERMAP = NO;
@@ -484,8 +481,8 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				OTHER_SWIFT_FLAGS = "$(inherited) -DXcode";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx;
-				SUPPORTED_PLATFORMS = "macosx iphoneos iphonesimulator appletvos appletvsimulator watchos watchsimulator";
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) SWIFT_PACKAGE";
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
